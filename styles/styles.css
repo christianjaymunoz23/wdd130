@@ -1,5 +1,11 @@
+:root {
+    --main-img-height: auto;
+    --heading-color: darkblue;
+    --aside-text-align: center;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--heading-color);
     padding: 10px;
 }
 
@@ -10,12 +16,12 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--heading-color);
 }
 
 main img {
     width: 150px;
-    height: auto;
+    height: var(--main-img-height);
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
@@ -36,18 +42,18 @@ aside {
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: center;
+    text-align: var(--aside-text-align);
 }
 
 aside img {
     width: 200px;
-    height: auto;
+    height: var(--main-img-height);
 }
 
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
-    text-align: center;
+    text-align: var(--aside-text-align);
 }
 
 /*main img {
