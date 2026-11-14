@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #145a64;
-    --secondary-color: #f2e8cf;
-    --accent1-color: #263238;
-    --accent2-color: #d97742;
+    --primary-color: #145374;
+    --secondary-color: #ee6c4d;
+    --accent1-color: #203647;
+    --accent2-color: #d9e8ef;
     --heading-font: Georgia, "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -22,6 +22,7 @@ header,
 main,
 footer {
     width: 840px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -47,29 +48,33 @@ article {
     position: relative;
 }
 
-.hero img {
+.hero > img {
     display: block;
     width: 100%;
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
+    opacity: 0.9;
+    background-color: var(--secondary-color);
     color: #fff;
 }
 
-article {
+.hero article {
     position: absolute;
-    color: var(--accent2-color);
+    right: 16px;
+    bottom: 24px;
+    left: 16px;
+    background-color: var(--accent2-color);
 }
 
 .hero article img {
     float: right;
     width: 125px;
+    margin: 0 0 12px 16px;
 }
